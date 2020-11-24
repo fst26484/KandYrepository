@@ -18,3 +18,6 @@ class QuestionForm(forms.ModelForm):
         model = Question
         fields = ['owner','text']
 
+
+#create
+
