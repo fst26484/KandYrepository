@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <div class="my-3">
+        <span class="font-weight-bold">
+            <a href="/admin/logout?next=/diary/">[ログアウト]</a></span>
+    </div>
+    <hr>
+    <meta charset="uft-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    crossorigin="anonymous">
+</head>
+</head>
+<body class="container">
+    <h1 class="display-7 next-primary">{{title}}</h1>
+    <p class="h4 mt-4">{{message|safe}}</p>
+    <a href="{% url 'white' %}">:日記を書く</a>
+    <br><a href="{% url 'view'　%}">:日記を見る</a>
+    <br><a href="{% url 'question' %}">:質問する</a></br>
+</body>
+</html>
