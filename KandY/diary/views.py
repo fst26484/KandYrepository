@@ -70,4 +70,4 @@ def question(request):
     return render(request, 'diary/question.html', params)
 
     ###test
-    sswswsw
+    ###testtest
